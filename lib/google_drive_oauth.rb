@@ -25,7 +25,7 @@ module GoogleDrive
 
     def drive_session(access_token: nil, refresh_token: options[:refresh_token])
       access_token = load_token(refresh_token) if access_token.nil?
-      access_token.refresh! if access_token.token.empty? or access_token.expired?
+      access_token = access_token.refresh! if access_token.token.empty? or access_token.expired?
       GoogleDrive.login_with_oauth(access_token.token)
     end
 
