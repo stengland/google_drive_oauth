@@ -8,8 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = GoogleDrive::Oauth::VERSION
   spec.authors       = ["Steve England"]
   spec.email         = ["stephen.england@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{Simplfies connecting to Google Drive}
   spec.homepage      = ""
   spec.license       = "MIT"
 
